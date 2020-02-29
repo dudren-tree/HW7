@@ -155,7 +155,7 @@ body{
 .column3 a:hover{
     -moz-text-shadow:0 0 10px #ffffff;
     -webkit-text-shadow:0 0 10px #ffffff; 
-    text-shadow:0 0 10px #ffffff;"
+    text-shadow:0 0 10px #ffffff;
 }
 .column1{
     position: relative;
@@ -192,7 +192,7 @@ body{
 .column1 a:hover{
     -moz-text-shadow:0 0 10px #ffffff;
     -webkit-text-shadow:0 0 10px #ffffff; 
-    text-shadow:0 0 10px #ffffff;"
+    text-shadow:0 0 10px #ffffff;
 }
 .column2{
     position: relative;
@@ -229,7 +229,7 @@ body{
 .column2 a:hover{
     -moz-text-shadow:0 0 10px #ffffff;
     -webkit-text-shadow:0 0 10px #ffffff; 
-    text-shadow:0 0 10px #ffffff;"
+    text-shadow:0 0 10px #ffffff;
 }
 .comments-up{
     background-color: #f9f9f9;
