@@ -1,193 +1,403 @@
+body{
+    font-family: 'Pathway Gothic One', sans-serif;
+}
 .top-bg {
     background-image: url(../img/bg.png);
-    height: 100%;
-    width: 960px;
+    /* height: 100%; */
+    width: 100%;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 }
 .wrapper {
     width: 960px;
     margin: 0 auto;
-    font-family: 'Pathway Gothic One', sans-serif;
+    /* font-family: 'Pathway Gothic One', sans-serif; */
 }
 .header {
     display: flex;
     justify-content: space-between;
     padding-top:65px;
     align-items: center;
+    position: relative;
 }
 .header li{
     display: inline-block;
-    font-family: 'Pathway Gothic One', sans-serif;
+    /* font-family: 'Pathway Gothic One', sans-serif; */
     padding-left: 50px;
     font-weight: bold;
     text-transform: uppercase;
     font-size: x-large;
 }
-.header li:hover{
-    text-decoration: underline;
+.header li:hover::after {
+    content: "";
+    border: 1px solid pink;
+    position: absolute;
+    width: 40px;
+    display: flex;
+    justify-content: center;
 }
 .header a {
     color: white;
     text-decoration: none;
 }
-.content{
-    display: flex;
-    /* position: relative; */
-    margin-top: 150px;
-    padding-top: 90px;
-    justify-content: space-evenly;
-    height: 430px;
-}
-.overlay {
+.overlay{
     background-color: rgb(0, 0, 0);
     opacity: 0.2;
     position: absolute;
-    left: 0px;
-    top: 278px;
-    width: 960px;
-    height: 515px;
-    z-index: 88;
-}  
-.left {
-    z-index: 99;
+    left: 1px;
+    top: 275px;
+    width: 100%;
+    height: 400px;
+    z-index: 103;     
 }
-.left h2 {
-    font-size: xxx-large;
-    color: white;
+.content{
+    position: relative;
+    width: 100%;
+    height: 700px;
 }
-.left h3{
-    font-size: xx-large;
+.slider1{
+    width: 65px;
+    position: absolute;
+    right: -80px;
+    top: 300px;
+    fill: white;
+    z-index: 300;
+}
+.slider2{
+    width: 65px;
+    position: absolute;
+    left: -100px;
+    top: 300px;
+    transform: rotate(180deg);
+    fill: white;
+    z-index: 300;
+}
+.left{
+    position: absolute;
+    bottom: 350px;
+    left: 0;
+    z-index: 200;
+}
+.left h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fefefe;
+}
+.left h2{
     color: #edbfff;
+    font-size: 30px;
+    text-transform: uppercase
 }
-.left p {
-    color:#ffffff;
+.left p{
+    color: #ffffff;
+    font-size: 20px;
 }
-.right {
-    width: 275px;
-    background-image: url(../img/Iphone.png);
-    z-index: 99;
+.right{
+    position: absolute;
+    bottom: 130px;
+    right: 60px;
+    z-index: 200;
+}
+.slider-menu{
+    position: absolute;
+    bottom: 0;
+    right: 120px;
 }
 .more-info{
-    /* margin-top: 470px; */
+    height: 340px;
+    width: 100%;
+    background: rgb(114,78,128);
+    background: linear-gradient(180deg, rgba(114,78,128,1) 0%, rgba(52,38,59,1) 100%);
+
+}
+.wrapper1 {
+    width: 960px;
+    margin: 0 auto;
+    font-family: 'Pathway Gothic One', sans-serif;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background: rgb(114,78,128);
-    background: linear-gradient(180deg, rgba(114,78,128,1) 4%, rgba(52,38,59,1) 100%);
-    height: 200px;
+    font-size: 20px;
+    padding-top: 120px;
+}
+.column3{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: flex-end;
+}
+.column3::before{    
+    position: absolute;
+    left: -30px;
+    content:"";
+    background-image: url(../img/open-wrench-tool-silhouette_icon-icons.com_73472.svg);
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.column3 h1{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.column3 p{
+    font-size: 15px;
+    text-transform: lowercase;
+}
+.column3 a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.column3 a:hover{
+    -moz-text-shadow:0 0 10px #ffffff;
+    -webkit-text-shadow:0 0 10px #ffffff; 
+    text-shadow:0 0 10px #ffffff;"
+}
+.column1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: flex-end;
+}
+.column1::before{
+    position: absolute;
+    left: -30px;
+    content: "";
+    background-image: url(../img/chat-3_icon-icons.com_66009.svg);
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.column1 h1{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.column1 p{
+    font-size: 15px;
+    text-transform: lowercase;
+}
+.column1 a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.column1 a:hover{
+    -moz-text-shadow:0 0 10px #ffffff;
+    -webkit-text-shadow:0 0 10px #ffffff; 
+    text-shadow:0 0 10px #ffffff;"
+}
+.column2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: flex-end;
+}
+.column2::before{
+    position: absolute;
+    left: -30px;
+    content:"";
+    background-image: url(../img/music_player_sign_musical_note_icon_123811.svg);
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.column2 h1{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.column2 p{
+    font-size: 15px;
+    text-transform: lowercase;
+}
+.column2 a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.column2 a:hover{
+    -moz-text-shadow:0 0 10px #ffffff;
+    -webkit-text-shadow:0 0 10px #ffffff; 
+    text-shadow:0 0 10px #ffffff;"
+}
+.comments-up{
+    background-color: #f9f9f9;
+    height: 400px;
     width: 100%;
 }
-.company1{
-    padding:0 40px;
-    color: white;
+.wrapper2{
     position: relative;
-}
-.icon1{
-    position: absolute;
-    /* height: 16px; */
-    width: 20px;
-    left: 15px;
-    top: 5px;
-}
-/* .company1 p ::before{
-    background-image: url(../img/accessible-icon-brands.svg);
-    width: 10px;
-    height: 10px;
-} */
-.company1 h2{
-    font-size: x-large;
-}
-.company1 ::before{
-    background-image: url(../img/first.jpg);
-    width: 10px;
-    height: 10px;
-}
-.company2{
-    padding:0 40px;
-    color: white;
-    position: relative;
-}
-.company2 h2{
-    font-size: x-large;
-}
-.company3{
-    padding:0 40px;
-    color: white;
-    position: relative;
-}
-.company3 h2{
-    font-size: x-large;
-}
-.bottom-text{
-    height: 400px;
     display: flex;
-    background-color: #f9f9f9;
-    align-items: center;
-    justify-content: space-around;
+    width: 960px;
+    margin: 0 auto;
+    font-family: 'Pathway Gothic One', sans-serif;
 }
-.left1{
-    background-image: url(../img/back-text.jpg);
-    font-size: 20px;
-}
-.right1{
+.com{
+    padding: 150px 10px;
     position: relative;
-    font-size: 20px;
 }
-.img{
+.com h1 ::before{
     position: absolute;
-    background-image: url(../img/img.jpg);
-    width: 15px;
-    height: 15px;
-    border: gray 1px solid;
-    border-radius: 50%;
     left: -30px;
+    top: 150px;
+    content: "";
+    background-image: url(../img/photo.jpg);
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.com h1{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.com span{
+    color: #edbfff;
+}
+.text-bg{
+    background-image: url(../img/back-text.jpg);
+    background-repeat: no-repeat;
+}
+.txt{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent #ffffff transparent transparent;
+    position: absolute;
+    bottom: 130px;
+    left: 215px;
+}
+.com-slider{
+    background-image: url(../img/slider-menu.png);
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    bottom: 90px;
+    left: 85px;
+}
+.up{
+    padding-top: 150px;
+    padding-left: 450px;
+    position: relative;
+}
+.up h1{
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 30px;
+    top: 115px;
+    right: 135px;
+}
+.up h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+.up h2::before{
+    position: absolute;
+    content: "";
+    background-image: url(../img/img.jpg);
+    background-size: cover;
+    height: 30px;
+    right: 225px;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 30px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle
 }
 .bottom-logo{
-    height: 65px;
     background-image: url(../img/bottom-logo.jpg);
     height: 65px;
-    width: 960px;
-}
-.footer{
-    position: relative;
-    height: 300px;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: larger;
-    background-color: #ececec;
-    align-items: center;
-}
-.logo2{
     position: absolute;
-    top: 25px;
-    left: 5px;
-    opacity: 0.5;
+    width: 100%;
+    bottom: 0;
 }
-.colum h2{
-    color: black;
-    font-size: x-large;
-    font-weight: bold;
-}
-.footer-menu{
+.footer-text{
+    background-color: #ececec;
     display: flex;
     justify-content: space-between;
-    /* padding-top: 65px; */
     align-items: center;
-    height: 50px;
+    padding: 80px 0;
 }
-.footer-menu li{
-    display: inline-block;
+.text {
+    position: relative;
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
     font-family: 'Pathway Gothic One', sans-serif;
-    padding-left: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: x-large;
 }
-.footer-menu li:hover{
+.text::before{
+    content: "";
+    position: absolute;
+    background-image: url(../img/logo2.jpg);
+    background-size: cover;
+    height: 30px;
+    top: -35px;
+    width: 110px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.text-f{
+    padding: 0 35px;   
+}
+.text-f h2{
+    color: #454545;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+.text-f span{
+    color: #c5c5c5;
+    text-transform: capitalize;
+    font-style: italic;
+}
+.text-f p{
+    color: gray;
+}
+.footer-menu{
+    background-image: url(../img/bg.png);
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.footer-wrapper{
+    width: 960px;
+    margin: 0 auto;
+    /* font-family: 'Pathway Gothic One', sans-serif; */
+}
+.footer-wrapper ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-wrapper li{
+    display: inline;
+    font-size: 30px;
+}
+.footer-wrapper a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.footer-wrapper li:hover{
     text-decoration: underline;
 }
-.footer-menu a {
-    color: white;
-    text-decoration: none;
+.copy{
+width: 150px;
 }
