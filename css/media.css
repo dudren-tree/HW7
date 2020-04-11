@@ -1,75 +1,219 @@
-@media(max-width:960px){
+@media (max-width: 960px) {
     .wrapper{
-        width: 730px;
+        width: 728px;
     }
+
     .header{
-        padding-top: 70px;
         flex-direction: column;
     }
+
     .header ul{
-        margin-top: 35px;
-        margin-left: -50px;
+        margin-top: 40px;
     }
-    .overlay{
-        height: 580px
+
+    .some_text{
+        width: 405px;
     }
-    .bottom-logo{
-        width: 730px;
+
+    .slider_point{
+        margin: 65px 0 0 560px;
     }
-    .wrapper1{
-        width: 730px;
+
+    .mid{
+        display: flex;
+        justify-content: space-between;
     }
-    .wrapper2{
-        width: 730px;
+
+    .left_review{
+        transform: scale(0.8);
+        margin: -30px 0 0 -40px;
     }
-    .comments-up{
-        height: 525px;
+
+    .update{
+        transform: scale(0.8);
+        margin: 75px 0 0 0;
     }
-    .txt{
-        left: 132px;
-    }
-    .up h2{
-        margin-left: -120px;
-    }
-    .up p{
-        margin-left: -125px;
-    }
-    .footer-text{
-        
-    }
+    
 }
-@media(max-width:768px){
+
+@media (max-width: 768px) {
     .wrapper{
         width: 440px;
-        height: 1000px;
     }
+
+    .overlay{
+        margin-top: 30px;
+        height: 300px;
+    }
+
     .header li:not(:first-child){
         display: none;
     }
+
     .header{
         align-items: center;
     }
-    .overlay{
-        display: none;
+
+    .slider{
+        height: 300px;
     }
-    .content{
-        display: none;
+
+    .slider_point{
+        margin: 15px 0 0 0;
+        justify-content: center;
+        display: flex;
     }
-    .more-info{
-        display: none;
+
+    .some_text{
+        height: 110px;
+        margin: 110px 0 0 0;
     }
-    .comments-up{
-        display: none;
+
+    .boldd{
+        font-size: 35px;
     }
-    .footer-text{
-        display: none;
+
+    .purpl span{
+        font-size: 15px;
     }
-    .footer-menu{
-        display: none;
+
+    .companys {
+        margin: 15px 0;
     }
+
+    .some_text p{
+        visibility: hidden;
+    }
+
+    .phones{
+        height: 430px;
+        margin-top: -65px;
+        transform: scale(0.7);
+    }
+
+    .info_text{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info_bg{
+        background-repeat: no-repeat;
+    }
+
+    .mid{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rew_point {
+        margin: 25px 0 0 150px;
+    }
+
+    .update {
+        margin: 20px 0 0 0;
+    }
+
+    .logos{
+        display: flex;
+        align-items: space-between;
+        flex-wrap: wrap;
+    }
+
+    .logos img{
+        margin-top: 15px;
+    }
+
+    .some_info{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .some_info div{
+        margin: 0;
+        padding-top: 65px;
+        width: 300px;
+    }
+
+    .foot_nav{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .foot_nav a{
+        margin: 10px 0;
+    }
+    
 }
-@media(max-width:480px){
+
+@media (max-width: 480px) {
     .wrapper{
         width: 280px;
+    }
+
+    .header ul li a:hover{
+        text-decoration: underline;
+    }
+
+    .phones{
+        display: none;
+    }
+
+    .overlay{
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .logos{
+        display: flex;
+        align-items: space-between;
+        flex-wrap: wrap;
+    }
+
+    .some_text{
+        margin: 90px 0 0 0;
+        text-align: center;
+    }
+
+    .boldd{
+        width: 300px;
+    }
+
+    .slider_point{
+        padding-bottom: 35px;
+    }
+
+    .mid_bg{
+        height: auto;
+    }
+
+    .mid{
+        transform: scale(0.7);
+    }
+
+    .brends{
+        transform: scale(0.8);
+    }
+
+    .reviews {
+        margin-top: 0;
+    }
+
+    .logos{
+        padding: 20px 30px 35px 35px;
+    }
+
+    .footer_info_bg{
+        display: none;
+    }
+
+    .foot_nav ul{
+        display: none;
+    }
+
+    .footer_bg{
+        height: 100px;
+    }
+
+    .foot_nav a{
+        margin: 41px 0;
     }
 }
